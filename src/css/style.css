@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+:root {
+    --calc-main:  calc(100vh - 80px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    overflow: hidden;
+}
+
+header {
+    height: 80px;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #282828;
+}
+
+.header-pictures {
+    display: flex;
+    gap: 15px;
+}
+
+.header-pictures img {
+    width: 225px;
+}
+
+.header-menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+}
+
+.header-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 26px;
+    font-weight: bolder;
+    font-size: 1.2em;
+    font-family: 'Chalet';
+}
+
+li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.home .background-main {
+    height: var(--calc-main);
+}
+
+.home {
+    display: flex;
+    position: relative;
+    min-height: var(--calc-main);
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7) 35%, transparent 65%);
+}
+
+.home .background-main {
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .information {
+    position: absolute;
+    min-height: var(--calc-main);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 0px 0px 0px 170px;
+    max-width: 780px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.home .information img {
+    max-width: 350px;
+}
+
+.home .information h1 {
+    font-size: 2.5em;
+}
+
+.home .information button {
+    width: 375px;
+    padding: 25px;
+    background: #ffffff28;
+    color: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 8px;
+
+    color: #e8e8e8;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.home .information button:hover {
+    background: #000000a2;
+}
+
