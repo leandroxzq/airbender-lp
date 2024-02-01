@@ -7,7 +7,8 @@
     <link rel="shortcut icon" href="src/img/Avatar-The-Last-Airbender.png" type="image/x-icon">
     <link href="https://fonts.cdnfonts.com/css/chalet" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/style.css">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -17,13 +18,21 @@
         <nav class="header-menu">
             <ul>
                 <li>
-                    <a href="#">Personagens</a>
-                </li>
-                <li>
-                    <a href="#">Desenho</a>
-                </li>
-                <li>
-                    <a href="#">Notícias</a>
+                    <div class="button-container">
+                        <button onclick="openMenu()">
+                        <span class="material-symbols-outlined">menu</span></button>
+                    </div>
+                    <ul id="menu">
+                        <li>
+                            <a href="#">Personagens</a>
+                        </li>
+                        <li>
+                            <a href="#">Desenho</a>
+                        </li>
+                        <li>
+                            <a href="#">Notícias</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>

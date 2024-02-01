@@ -34,6 +34,20 @@ header {
     width: 225px;
 }
 
+header button {
+    display: none;
+    background: transparent;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+}
+
+.header-menu ul li .button-container {
+    display: flex;
+    align-items: center;
+}
+
 .header-menu ul {
     display: flex;
     flex-direction: row;
@@ -117,3 +131,43 @@ li a:hover {
     background: #000000a2;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: space-around;
+        padding: 0px;
+    }
+
+    .home .information img {
+        width: 300px;
+    }
+
+    .home .information {
+        align-items: center;
+        padding: 50px;
+        font-size: 0.8rem;
+    }
+
+    header button {
+        display: flex;
+    }
+
+    .header-menu #menu {
+        display: none;
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        right: 0;
+        background-color: #0b0b0b;
+        z-index: 100;
+        border-radius: 10px;
+    }
+
+    .header-menu #menu.show {
+        display: block;
+    }
+
+    .header-menu li {
+        text-align: center;
+        padding: 30px 15px;
+    }
+}
