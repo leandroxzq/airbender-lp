@@ -91,7 +91,7 @@ header button {
     object-fit: cover;
 }
 
-.home .information {
+.information {
     position: absolute;
     min-height: var(--calc-main);
     display: flex;
@@ -104,45 +104,35 @@ header button {
 
 }
 
-.home .information img {
-    max-width: 350px;
+.information img {
+    width: 350px;
 }
 
-.home .information h1 {
+.information h1 {
     font-size: 2.5em;
 }
 
-.home .information button {
-    width: 375px;
+.information button {
+    min-width: 375px;
     padding: 25px;
     background: #ffffff28;
     color: #e8e8e8;
     cursor: pointer;
     border: 1px solid #fff;
     border-radius: 8px;
-    text-transform: uppercase;
-    font-weight: bold;
     font-size: 1.5em;
+    font-family: 'Chalet';
+    margin: 0 auto;
 }
 
-.home .information button:hover {
+.information button:hover {
     background: #000000a2;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     header {
         justify-content: space-around;
         padding: 0px;
-    }
-
-    .home .information img {
-        width: 300px;
-    }
-
-    .home .information {
-        align-items: center;
-        padding: 50px;
-        font-size: 0.8rem;
     }
 
     header button {
@@ -167,5 +157,19 @@ header button {
     .header-menu li {
         text-align: center;
         padding: 30px 15px;
+    }
+
+    .information img {
+        width: 250px; 
+    }
+
+    .information {
+        align-items: center;
+        padding: 0px 10px;
+        font-size: 0.8rem;
+    }
+
+    .information button {
+        min-width: 200px;
     }
 }
