@@ -113,7 +113,7 @@ header button {
 }
 
 .information button {
-    min-width: 375px;
+    max-width: 375px;
     padding: 25px;
     background: #ffffff28;
     color: #e8e8e8;
@@ -122,7 +122,6 @@ header button {
     border-radius: 8px;
     font-size: 1.5em;
     font-family: 'Chalet';
-    margin: 0 auto;
 }
 
 .information button:hover {
@@ -170,6 +169,6 @@ header button {
     }
 
     .information button {
-        min-width: 200px;
+        min-width: 275px;
     }
 }
